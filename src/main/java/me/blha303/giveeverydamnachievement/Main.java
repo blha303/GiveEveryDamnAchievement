@@ -11,7 +11,8 @@ public class Main extends JavaPlugin {
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
 	{
 		Player p = null;
-		try {
+		try
+		{
 			p = getServer().getPlayer(args[0]);
 		} 
 		catch (Exception e)
