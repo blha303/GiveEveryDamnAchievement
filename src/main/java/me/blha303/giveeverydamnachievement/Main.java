@@ -8,20 +8,25 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 
-  public boolean onCommand(CommandSender sender, Command command,
-      String label, String[] args) {
-    Player p = null;
-    try {
-      p = getServer().getPlayer(args[0]);
-    } catch (Exception e) {
-      return false;
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
+    {
+        Player p = null;
+        try
+        {
+            p = getServer().getPlayer(args[0]);
+        } 
+        catch (Exception e)
+        {
+            return false;
+        }
+        if (p != null)
+        {
+            for (Achievement ach : Achievement.values())
+            {
+                p.awardAchievement(ach);
+            }
+            return true;
+        }
+        return false;
     }
-    if (p != null) {
-      for (Achievement ach : Achievement.values()) {
-        p.awardAchievement(ach);
-      }
-      return true;
-    }
-    return false;
-  }
 }
