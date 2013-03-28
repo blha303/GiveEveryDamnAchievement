@@ -5,7 +5,7 @@ commands:
   giveeverydamnachievement:
     description: Give the specified player every damn achievement
     usage: /giveeverydamnachievement <player>
-    aliases: [geda]
+    aliases: [geda, giveallachivements, giveachivements, giveallach, giveach, allach]
 permissions:
   giveeverydamnachievement.use:
     description: Lets the player use the command
