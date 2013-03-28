@@ -1,10 +1,10 @@
 name: GiveEveryDamnAchievement
 main: me.blha303.giveeverydamnachievement.Main
-version: 3
+version: 4
 commands:
   giveeverydamnachievement:
-    description: Give the specified player every damn achievement
-    usage: /giveeverydamnachievement <player>
+    description: Give the specified players every damn achievement
+    usage: /giveeverydamnachievement <player> [player...]
     aliases: [geda, giveallachievements, giveachievements, giveallach, giveach, allach]
 permissions:
   giveeverydamnachievement.use:
