@@ -1,6 +1,6 @@
 name: GiveEveryDamnAchievement
 main: me.blha303.giveeverydamnachievement.Main
-version: 3
+version: 4
 commands:
   giveeverydamnachievement:
     description: Give the specified players every damn achievement
